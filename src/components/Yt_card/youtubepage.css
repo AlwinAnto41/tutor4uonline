@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.youtube-page {
+  background-color: #ffffffa5;
+  padding: 50px 0;
+  box-shadow: 0 0px 3px rgba(0, 128, 255, 0.622); /* Increases shadow visibility */
+}
+
+.youtube-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.youtube-head h2 {
+  font-size: 45px;
+  color: #4d61a4;
+  margin-bottom: 20px;
+  font-family: "Freeman", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.youtube-link {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.youtube-link button {
+  margin-top: 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.youtube-link button:hover {
+  background-color: #3e8e41;
+}
+
+.arrow {
+  margin-left: 10px;
+  font-size: 18px;
+  vertical-align: middle;
+}
+
+.youtube-link span {
+  margin-left: 10px;
+}
+
+/* Media Queries */
+
+/* Large devices (desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .youtube-head h2 {
+    font-size: 45px;
+  }
+
+  .youtube-link button {
+    font-size: 24px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .youtube-head h2 {
+    font-size: 35px;
+  }
+
+  .youtube-link button {
+    font-size: 20px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .youtube-head h2 {
+    font-size: 30px;
+  }
+
+  .youtube-link button {
+    font-size: 18px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .youtube-head h2 {
+    font-size: 25px;
+  }
+
+  .youtube-link button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}

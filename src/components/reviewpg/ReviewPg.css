@@ -1,0 +1,68 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.review-page {
+  background-color: #ffffff8b;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.review-page h1 {
+  font-size: 60px;
+  color: #4d61a4;
+}
+
+.review-page-title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.review-card h3 {
+  color: #6c6884;
+}
+
+.reviews-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.review-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.review-card.animate {
+  animation: fadeIn 1.5s forwards;
+}
+
+.review-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.review-author {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4a4a4a;
+}

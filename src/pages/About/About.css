@@ -1,0 +1,90 @@
+/* About.css */
+
+/* Container styles */
+.aboutfullpage{
+  width: 100%;
+  background-color: #a1abebf1;
+} 
+.about-container {
+    position: relative;
+    margin-top: 50px;
+    max-width: 1000px; /* Adjust as needed */
+    margin-left: 15%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    padding: 20px;
+    display: flex; /* Make the container flex */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px; /* Adjust the value to change the roundness */
+}
+
+  
+  /* Title styles */
+  .about-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Adjust color as needed */
+    /* Add attractive styling */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add text shadow */
+  }
+  
+  /* Section styles */
+  .about-section {
+    margin-bottom: 30px;
+    width: 100%; /* Make sections full width */
+    max-width: 600px; /* Limit max width for better readability */
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #555; /* Adjust color as needed */
+  }
+  
+  .section-content {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666; /* Adjust color as needed */
+  }
+  
+  /* Image styles */
+  .about-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Add border radius for rounded corners */
+    /* Align image to the right and center it vertically */
+    float: right;
+    margin-left: 20px;
+  }
+  
+  /* List styles */
+  .section-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .section-list li {
+    margin-bottom: 10px;
+  }
+  
+  /* Footer styles (assuming it's a separate component) */
+  /* Adjust as needed based on your Footer component */
+  .footer-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Adjust background color as needed */
+  }
+  
+  /* Header styles (assuming it's a separate component) */
+  /* Adjust as needed based on your Header component */
+  .header-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Adjust background color as needed */
+    /* Add attractive styling */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add box shadow */
+  }
+  

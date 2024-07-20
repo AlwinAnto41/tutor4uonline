@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+.main-back {
+  background-color: rgb(12, 33, 63);
+  height: 600px;
+  margin-top: 15px;
+}
+.StyledContactForm {
+  position: relative;
+  top: 40px;
+  margin-left: 200px;
+  width: 400px;
+}
+
+form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  font-size: 16px;
+
+  input {
+    width: 100%;
+    height: 35px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+
+    &:focus {
+      border: 3px solid rgba(0, 206, 158, 1);
+    }
+  }
+
+  textarea {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    max-height: 100px;
+    min-height: 100px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+
+    &:focus {
+      border: 3px solid rgb(0, 206, 179);
+    }
+  }
+
+  label {
+    margin-top: 1rem;
+    color: white;
+  }
+
+  input[type="submit"] {
+    margin-top: 2rem;
+    cursor: pointer;
+    background: rgb(249, 105, 14);
+    color: white;
+    border: none;
+  }
+}
+
+.alert {
+  border: 3px solid rgb(89, 206, 0);
+  position: absolute;
+  background-color: #000000; /* Red background */
+  color: rgb(255, 255, 255); /* White text */
+  padding: 15px; /* Padding */
+  margin-bottom: 20px; /* Margin bottom */
+  border-radius: 4px; /* Rounded corners */
+  width: 160px;
+  margin-left: 1320px;
+  display: flex;
+  align-items: center;
+}
+
+/* Add animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to the alert */
+.alert {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.icon {
+  color: #1aff00;
+  margin-right: 10px;
+  margin-top: 1px;
+}
+
+.message {
+  flex: 1; /* Take remaining space */
+}
+
+.eqHeader {
+  position: absolute;
+  /* left: 4px; */
+}
+.eqHeader h1 {
+  left: 90%;
+  top: 50px;
+  position: relative;
+  font-size: 60px;
+  color: #ffffff;
+  /* text-align: center; */
+  padding-left: 150px;
+
+  font-family: "Hahmlet", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.eqHeader h4 {
+  position: relative;
+  left: 90%;
+
+  font-size: 70px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Hahmlet", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin-left: 130px;
+}
+.eqHeader p {
+  position: relative;
+  left: 90%;
+
+  bottom: 20px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 150px;
+
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media screen and (max-width: 1429px) {
+  .main-back {
+    height: 900px;
+    /* width: 675px; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 240px;
+  }
+  .eqHeader {
+    position: absolute;
+    right: 50%;
+  }
+  .eqHeader h1 {
+    font-size: 62px;
+    align-items: center;
+    white-space: nowrap; /* Prevent text wrapping */
+    padding-bottom: 10px;
+  }
+
+  .eqHeader h4 {
+    font-size: 60px;
+  }
+  .eqHeader p {
+    font-size: 30px;
+  }
+
+  .StyledContactForm {
+    margin-bottom: 10px;
+    margin-left: 30px; /* Reset margin for smaller screens */
+    width: 300px; /* Occupy full width on smaller screens */
+  }
+  .alert {
+    height: 10px;
+    position: relative;
+    top: 570px;
+    margin-left: 179px; /* Reset margin for smaller screens */
+  }
+}
+
+/* Define styles for screens smaller than 600px */
+@media screen and (max-width: 768px) {
+  .main-back {
+    height: 800px;
+    /* width: 675px; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 240px;
+  }
+
+  .eqHeader {
+    position: absolute;
+    right: 115%;
+  }
+  .eqHeader h1 {
+    font-size: 32px;
+    align-items: center;
+    white-space: nowrap; /* Prevent text wrapping */
+    padding-bottom: 10px;
+  }
+
+  .eqHeader h4 {
+    font-size: 30px;
+  }
+  .eqHeader p {
+    font-size: 15px;
+  }
+
+  .StyledContactForm {
+    margin-bottom: 10px;
+    margin-left: 30px; /* Reset margin for smaller screens */
+    width: 300px; /* Occupy full width on smaller screens */
+  }
+  .alert {
+    height: 10px;
+    position: relative;
+    top: 570px;
+    margin-left: 179px; /* Reset margin for smaller screens */
+  }
+}
+
+/* Define styles for screens larger than 1200px */
+@media screen and (min-width: 1200px) {
+  .alert {
+    margin-left: 1320px;
+  }
+}

@@ -1,0 +1,187 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+/* General Styles */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6f62b7;
+  --highlight-color: #fbaf0f;
+  --highlight-hover-color: #33bb15;
+  --text-color: #585555;
+  --button-width: 100px;
+  --button-border-radius: 50px;
+  --font-family-main: 'Josefin Sans', sans-serif;
+  --font-family-secondary: 'Playfair Display', serif;
+  --font-family-button: 'Poetsen One', sans-serif;
+  --nav-item-margin-right: 60px;
+  --transition-duration: 0.3s;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #fff;
+  padding: 0 20px;
+  /* box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); */
+  position: relative;
+}
+
+.logo h1 {
+  font-size: 30px;
+  color: var(--primary-color);
+  margin: 0;
+  font-family: var(--font-family-main);
+  font-weight: 500;
+}
+
+.logo p {
+  margin: 0;
+  font-size: 13px;
+  padding-left: 10px;
+  color: var(--secondary-color);
+  font-family: var(--font-family-secondary);
+  font-weight: 100;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav ul li {
+  margin-right: var(--nav-item-margin-right);
+  position: relative;
+}
+
+.nav ul li:last-child {
+  margin-right: 0;
+}
+
+.nav ul button {
+  background-color: var(--highlight-color);
+  color: #fff;
+  width: var(--button-width);
+  border: none;
+  border-radius: var(--button-border-radius);
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 0;
+  font-family: var(--font-family-button);
+  font-weight: 400;
+  transition: background-color var(--transition-duration) ease;
+}
+
+.nav ul button:hover {
+  background-color: var(--highlight-hover-color);
+}
+
+.nav ul button a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  transition: color var(--transition-duration) ease;
+  font-family: 'Changa', sans-serif;
+}
+
+.nav ul li a:hover {
+  color: var(--primary-color);
+}
+
+.nav ul li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--primary-color);
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: transform var(--transition-duration) ease-in-out, visibility var(--transition-duration) ease-in-out;
+}
+
+.nav ul li a:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+  transition: transform 0.4s ease;
+}
+
+.hamburger.active div:first-child {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active div:last-child {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  .nav ul {
+    display: block;
+    width: 100%;
+  }
+
+  .nav ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .nav ul li a {
+    color: #000;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
